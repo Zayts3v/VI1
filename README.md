@@ -22,11 +22,16 @@ Note that when referring to “code found in the Internet” it is not to be und
 
 Some possible themes are:
 
-Screen space ambient occlusion
-Terrain generation
-GPU Procedural Material Generation
-Non-Photorealistic Rendering
-Occlusion Queries
-Drawing Geometry with OpenGL
+- Screen space ambient occlusion
+
+- Terrain generation
+
+- GPU Procedural Material Generation
+
+- Non-Photorealistic Rendering
+
+- Occlusion Queries
+
+- Drawing Geometry with OpenGL
 
 Students may present alternative topics, checking with the lecturer the suitability of their proposal prior to starting their work.
