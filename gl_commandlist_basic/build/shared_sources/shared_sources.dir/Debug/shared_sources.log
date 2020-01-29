@@ -1,0 +1,32 @@
+﻿  Building Custom Rule C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/shared_sources/CMakeLists.txt
+  appwindowprofiler.cpp
+  bitarray.cpp
+  cameramanipulator.cpp
+  gltfscene.cpp
+  nvprint.cpp
+  parametertools.cpp
+  profiler.cpp
+  shaderfilemanager.cpp
+  noise1234.cpp
+  cadscenefile.cpp
+  nv_dds.cpp
+  nvpwindow.cpp
+  nvpsystem.cpp
+  nvpsystem_win32.cpp
+  appwindowprofiler_gl.cpp
+  contextwindow_gl.cpp
+  error_gl.cpp
+  extensions_gl.cpp
+  profiler_gl.cpp
+  programmanager_gl.cpp
+  Generating Code...
+  Compiling...
+  imgui.cpp
+  imgui_draw.cpp
+  imgui_helper.cpp
+  imgui_impl_glfw.cpp
+  imgui_widgets.cpp
+  imgui_orient.cpp
+  imgui_impl_gl.cpp
+  Generating Code...
+  shared_sources.vcxproj -> C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\bin_x64\Debug\shared_sources_gl.lib

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A991C4FA-A9EA-32C0-94F5-55E634015426}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>shared_sources</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\bin_x64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">shared_sources.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">shared_sources_gl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\bin_x64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shared_sources.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">shared_sources_gl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\bin_x64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">shared_sources.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">shared_sources_gl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\bin_x64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">shared_sources.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">shared_sources_gl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RESOURCE_DIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/";NOMINMAX;PROJECT_RELDIRECTORY="../../gl_commandlist_basic/";PROJECT_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/";PROJECT_NAME="gl_commandlist_basic";PROJECT_DOWNLOAD_RELDIRECTORY="../../downloaded_resources/";PROJECT_DOWNLOAD_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;RESOURCE_DIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/\";NOMINMAX;PROJECT_RELDIRECTORY=\"../../gl_commandlist_basic/\";PROJECT_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/\";PROJECT_NAME=\"gl_commandlist_basic\";PROJECT_DOWNLOAD_RELDIRECTORY=\"../../downloaded_resources/\";PROJECT_DOWNLOAD_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/\";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/";NOMINMAX;PROJECT_RELDIRECTORY="../../gl_commandlist_basic/";PROJECT_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/";PROJECT_NAME="gl_commandlist_basic";PROJECT_DOWNLOAD_RELDIRECTORY="../../downloaded_resources/";PROJECT_DOWNLOAD_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/\";NOMINMAX;PROJECT_RELDIRECTORY=\"../../gl_commandlist_basic/\";PROJECT_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/\";PROJECT_NAME=\"gl_commandlist_basic\";PROJECT_DOWNLOAD_RELDIRECTORY=\"../../downloaded_resources/\";PROJECT_DOWNLOAD_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/\";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/";NOMINMAX;PROJECT_RELDIRECTORY="../../gl_commandlist_basic/";PROJECT_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/";PROJECT_NAME="gl_commandlist_basic";PROJECT_DOWNLOAD_RELDIRECTORY="../../downloaded_resources/";PROJECT_DOWNLOAD_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/\";NOMINMAX;PROJECT_RELDIRECTORY=\"../../gl_commandlist_basic/\";PROJECT_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/\";PROJECT_NAME=\"gl_commandlist_basic\";PROJECT_DOWNLOAD_RELDIRECTORY=\"../../downloaded_resources/\";PROJECT_DOWNLOAD_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/\";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/";NOMINMAX;PROJECT_RELDIRECTORY="../../gl_commandlist_basic/";PROJECT_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/";PROJECT_NAME="gl_commandlist_basic";PROJECT_DOWNLOAD_RELDIRECTORY="../../downloaded_resources/";PROJECT_DOWNLOAD_ABSDIRECTORY="C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../shared_sources/resources/\";NOMINMAX;PROJECT_RELDIRECTORY=\"../../gl_commandlist_basic/\";PROJECT_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/\";PROJECT_NAME=\"gl_commandlist_basic\";PROJECT_DOWNLOAD_RELDIRECTORY=\"../../downloaded_resources/\";PROJECT_DOWNLOAD_ABSDIRECTORY=\"C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/../downloaded_resources/\";USEOPENGL;USEIMGUI;CSF_ZIP_SUPPORT=1;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_external\glfw3\include;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\..\shared_sources\imgui;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_external\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/shared_sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic" "-BC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build" --check-stamp-file "C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\cmake\FindZLIB.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\build\shared_sources\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/shared_sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic" "-BC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build" --check-stamp-file "C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\cmake\FindZLIB.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\build\shared_sources\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/shared_sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic" "-BC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build" --check-stamp-file "C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\cmake\FindZLIB.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\build\shared_sources\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/shared_sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic" "-BC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build" --check-stamp-file "C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\cmake\FindZLIB.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\build\shared_sources\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\appwindowcamerainertia.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\appwindowprofiler.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\appwindowprofiler.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\bitarray.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\bitarray.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\cameracontrol.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\camerainertia.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\cameramanipulator.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\cameramanipulator.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\fileoperations.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\geometry.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\gltfscene.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\gltfscene.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\inputparser.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\misc.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\nsightevents.h" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\nvprint.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\nvprint.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\parametertools.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\parametertools.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\profiler.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\profiler.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\radixsort.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\shaderfilemanager.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\shaderfilemanager.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\timesampler.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\trangeallocator.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath.inl" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath_glsltypes.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath_hlsltypes.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath_types.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\noise\mersennetwister1.h" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\noise\noise1234.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\noise\noise1234.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\bmp.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\cadscenefile.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\cadscenefile.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\json.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\nv_dds.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\nv_dds.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\stb_image.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\stb_image_write.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\tiny_gltf.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\tiny_obj_loader.h" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpwindow.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpwindow.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpsystem.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpsystem.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpsystem_win32.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\appwindowprofiler_gl.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\appwindowprofiler_gl.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\base_gl.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\contextwindow_gl.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\contextwindow_gl.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\error_gl.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\error_gl.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\extensions_gl.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\extensions_gl.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\glsltypes_gl.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\profiler_gl.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\profiler_gl.hpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\programmanager_gl.cpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\programmanager_gl.hpp" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imconfig.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_internal.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_helper.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_orient.h" />
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_gl.h" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_helper.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_orient.cpp" />
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_gl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\gl_commandlist_basic\build\ZERO_CHECK.vcxproj">
+      <Project>{D3712918-6FEB-387C-B4F3-1E4CE22A1115}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

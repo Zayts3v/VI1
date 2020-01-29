@@ -1,0 +1,10 @@
+^C:\USERS\VITOR\DOCUMENTS\MIEI\VISUALIZAÇÃO E ILUMINAÇÃO 1\TRABALHO PRÁTICO\SHARED_SOURCES\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic" "-BC:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build" --check-stamp-file "C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

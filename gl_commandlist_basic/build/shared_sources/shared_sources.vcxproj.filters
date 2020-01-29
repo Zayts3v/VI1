@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\appwindowprofiler.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\bitarray.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\cameramanipulator.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\gltfscene.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\nvprint.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\parametertools.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\profiler.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\shaderfilemanager.cpp">
+      <Filter>nvh</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\noise\noise1234.cpp">
+      <Filter>noise</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\cadscenefile.cpp">
+      <Filter>fileformats</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\nv_dds.cpp">
+      <Filter>fileformats</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpwindow.cpp">
+      <Filter>nvp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpsystem.cpp">
+      <Filter>nvp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpsystem_win32.cpp">
+      <Filter>nvp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\appwindowprofiler_gl.cpp">
+      <Filter>nvgl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\contextwindow_gl.cpp">
+      <Filter>nvgl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\error_gl.cpp">
+      <Filter>nvgl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\extensions_gl.cpp">
+      <Filter>nvgl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\profiler_gl.cpp">
+      <Filter>nvgl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\programmanager_gl.cpp">
+      <Filter>nvgl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_helper.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_orient.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_gl.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\appwindowcamerainertia.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\appwindowprofiler.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\bitarray.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\cameracontrol.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\camerainertia.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\cameramanipulator.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\fileoperations.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\geometry.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\gltfscene.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\inputparser.h">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\misc.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\nsightevents.h">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\nvprint.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\parametertools.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\profiler.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\radixsort.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\shaderfilemanager.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\timesampler.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvh\trangeallocator.hpp">
+      <Filter>nvh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath.h">
+      <Filter>nvmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath.inl">
+      <Filter>nvmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath_glsltypes.h">
+      <Filter>nvmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath_hlsltypes.h">
+      <Filter>nvmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvmath\nvmath_types.h">
+      <Filter>nvmath</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\noise\mersennetwister1.h">
+      <Filter>noise</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\noise\noise1234.h">
+      <Filter>noise</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\bmp.hpp">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\cadscenefile.h">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\json.hpp">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\nv_dds.h">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\stb_image.h">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\stb_image_write.h">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\tiny_gltf.h">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\fileformats\tiny_obj_loader.h">
+      <Filter>fileformats</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpwindow.hpp">
+      <Filter>nvp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvpsystem.hpp">
+      <Filter>nvp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\appwindowprofiler_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\base_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\contextwindow_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\error_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\extensions_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\glsltypes_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\profiler_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\nvgl\programmanager_gl.hpp">
+      <Filter>nvgl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_helper.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_orient.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\imgui\imgui_impl_gl.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\vitor\Documents\MIEI\Visualização e Iluminação 1\Trabalho Prático\shared_sources\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="fileformats">
+      <UniqueIdentifier>{6C9C3121-177E-3D68-A114-8C15293E7C6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{FDAED3A0-EC4F-3C00-BB82-1DBC78D0817D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="noise">
+      <UniqueIdentifier>{01D83B71-DE49-3325-9182-A0EAD6A3B09F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nvh">
+      <UniqueIdentifier>{03CB910A-929E-3E6F-A40C-BEE8784CA6A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nvmath">
+      <UniqueIdentifier>{49488D2F-F275-330B-8D62-1A36F8282536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nvp">
+      <UniqueIdentifier>{36B95354-BB20-3923-A3FD-F5725179135E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nvgl">
+      <UniqueIdentifier>{BD712A38-9D6B-36E4-B54D-9709EE9F1540}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
