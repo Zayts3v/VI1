@@ -32,28 +32,22 @@
 #extension GL_ARB_shading_language_include : enable
 #include "common.h"
 
-in Interpolants {
+in layout(location=VERTEX_POS)    vec3 pos;
+in layout(location=VERTEX_NORMAL) vec3 normal;
+in layout(location=VERTEX_UV)     vec2 uv;
+
+out Interpolants {
   vec3 wPos;
   vec3 wNormal;
   vec2 uv;
-} IN;
-
-layout(location=0,index=0) out vec4 out_Color;
+} OUT;
 
 void main()
 {
-  vec4 color = texture(object.texColor, IN.uv * object.texScale.xy);
-  float opacidade = color.w;
-
-  if(opacidade<0.5) discard;
-  
-  vec3 lightDir = normalize(scene.wLightPos.xyz - IN.wPos);
-  vec3 viewDir  = normalize((-scene.viewMatrix[3].xyz) - IN.wPos);
-  vec3 halfDir  = normalize(lightDir + viewDir);
-  vec3 normal   = normalize(IN.wNormal);
-  
-  float intensity = max(0.2,dot(normal,lightDir));
-  intensity += pow(max(0,dot(normal,halfDir)),8);
-  
-  out_Color = vec4(vec3(color * object.color * intensity),opacidade);
+  vec3 wPos     = (object.worldMatrix   * vec4(pos.x+10*cos(scene.time),pos.y,pos.z+10*sin(scene.time),1)).xyz;
+  vec3 wNormal  = mat3(object.worldMatrixIT) * normal;
+  gl_Position   = scene.viewProjMatrix * vec4(wPos,1);
+  OUT.wPos = wPos;
+  OUT.wNormal = wNormal;
+  OUT.uv = uv;
 }

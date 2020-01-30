@@ -65,7 +65,7 @@ namespace basiccmdlist
   int const SAMPLE_MINOR_VERSION(5);
 
 
-  static const int numObjects = 10000;
+  static const int numObjects = 1000;
   static const int grid = 64;
   static const float globalscale = 8.0f;
 
@@ -298,8 +298,8 @@ namespace basiccmdlist
       ProgramManager::Definition(GL_FRAGMENT_SHADER,        "scene.frag.glsl"));
 
     programs.draw_scene_geo = m_progManager.createProgram(
-      ProgramManager::Definition(GL_VERTEX_SHADER,          "scene.vert.glsl"),
-      ProgramManager::Definition(GL_GEOMETRY_SHADER,        "scene.geo.glsl"),
+      ProgramManager::Definition(GL_VERTEX_SHADER,          "movescene.vert.glsl"),
+      //ProgramManager::Definition(GL_GEOMETRY_SHADER,        "scene.geo.glsl"),
       ProgramManager::Definition(GL_FRAGMENT_SHADER,        "scene.frag.glsl"));
 
     cmdlist.state.programChangeID++;
@@ -490,6 +490,21 @@ namespace basiccmdlist
           glMakeNamedBufferResidentNV(buffers.relvado_vbo, GL_READ_ONLY);
       }
 
+      //int boxes = 100;
+
+      nvh::geometry::Box<Vertex>  box;
+      newBuffer(buffers.box_ibo);
+      glNamedBufferStorage(buffers.box_ibo, box.getTriangleIndicesSize(), &box.m_indicesTriangles[0], 0);
+      newBuffer(buffers.box_vbo);
+      glNamedBufferStorage(buffers.box_vbo, box.getVerticesSize(), &box.m_vertices[0], 0);
+
+      if (m_bindlessVboUbo) {
+          glGetNamedBufferParameterui64vNV(buffers.box_ibo, GL_BUFFER_GPU_ADDRESS_NV, &buffersADDR.box_ibo);
+          glGetNamedBufferParameterui64vNV(buffers.box_vbo, GL_BUFFER_GPU_ADDRESS_NV, &buffersADDR.box_vbo);
+          glMakeNamedBufferResidentNV(buffers.box_ibo, GL_READ_ONLY);
+          glMakeNamedBufferResidentNV(buffers.box_vbo, GL_READ_ONLY);
+      }
+
       nvh::geometry::Figure<Vertex>  tronco("models\\tree.obj", "tronco");
       newBuffer(buffers.tronco_ibo);
       glNamedBufferStorage(buffers.tronco_ibo, tronco.getTriangleIndicesSize(), &tronco.m_indicesTriangles[0], 0);
@@ -505,7 +520,7 @@ namespace basiccmdlist
       // Scene objects
       newBuffer(buffers.objects_ubo);
       glBindBuffer(GL_UNIFORM_BUFFER, buffers.objects_ubo);
-      glBufferData(GL_UNIFORM_BUFFER, uboAligned(sizeof(ObjectData)) * numObjects, NULL, GL_STATIC_DRAW);
+      glBufferData(GL_UNIFORM_BUFFER, uboAligned(sizeof(ObjectData)) * numObjects+1, NULL, GL_STATIC_DRAW);
       if (m_bindlessVboUbo){
         glGetNamedBufferParameterui64vNV(buffers.objects_ubo, GL_BUFFER_GPU_ADDRESS_NV, &buffersADDR.objects_ubo);
         glMakeNamedBufferResidentNV(buffers.objects_ubo,GL_READ_ONLY);
@@ -555,7 +570,7 @@ namespace basiccmdlist
       m_sceneObjects.push_back(infoR);
 
 
-      for (int i = 1; i < numObjects+1; i+=2){
+      for (int i = 1; i < numObjects / 2 + 1; i+=2){
         ObjectData  oTronco,oFolhas;
 
         
@@ -620,6 +635,54 @@ namespace basiccmdlist
 
 
             m_sceneObjects.push_back(infoF);
+      }
+
+      for (int i = numObjects/2+1; i < numObjects; i++) {
+          ObjectData  oBox;
+
+
+          //vec3  pos(nvh::frand()* float(grid), nvh::frand()* float(grid), nvh::frand()* float(grid / 2));
+          vec3  pos((nvh::frand() - 0.5) * 2 * float(grid), 0, (nvh::frand() - 0.5) * 2 * float(grid));
+
+          float scale = globalscale / float(grid);
+          scale += (nvh::frand()) * 0.25f;
+
+          //pos -=  vec3( grid/2, grid/2, grid/2);
+          //pos /=  float(grid) / globalscale;
+
+          float angle = 0;// nvh::frand() * 180.f;
+
+          mat4f worldMatrix = nvmath::translation_mat4(pos) *
+              nvmath::scale_mat4(vec3(scale)) *
+              nvmath::rotation_mat4_x(angle);
+          mat4f worldMatrixIT = nvmath::transpose(nvmath::invert(worldMatrix));
+          float x = rand() % 2 + 1.0f;
+          float y = rand() % 2 + 1.0f;
+          vec4f color = vec4(1.0f, 1.0f, 1.0f, 1.0f); //vec4(nvh::frand(), nvh::frand(), nvh::frand(), 1.0f);
+          oBox.worldMatrix = worldMatrix;
+          oBox.worldMatrixIT = worldMatrixIT;
+          oBox.texScale.x = x;
+          oBox.texScale.y = y;
+          oBox.color = color;
+
+
+          oBox.texColor = texturesADDR.color; // bindless texture used
+
+          glBufferSubData(GL_UNIFORM_BUFFER, uboAligned(sizeof(ObjectData)) * (i  ), sizeof(ObjectData), &oBox);
+
+          ObjectInfo  infoB;
+          //info.program = pos.x < 0 ? programs.draw_scene_geo : programs.draw_scene;
+          infoB.program = programs.draw_scene_geo;
+
+          infoB.ibo = buffers.box_ibo;
+          infoB.vbo = buffers.box_vbo;
+          infoB.iboADDR = buffersADDR.box_ibo;
+          infoB.vboADDR = buffersADDR.box_vbo;
+          infoB.numIndices = box.getTriangleIndicesCount();
+
+
+          m_sceneObjects.push_back(infoB);
+
       }
 
 
@@ -1294,6 +1357,8 @@ namespace basiccmdlist
 
   void Sample::drawTokenList()
   {
+
+
     if ( cmdlist.state != cmdlist.captured ){
 #if ALLOW_EMULATION_LAYER
       updateCommandListState();
@@ -1302,8 +1367,23 @@ namespace basiccmdlist
 #endif
     }
 
-    glCallCommandListNV(cmdlist.tokenCmdList);
-
+    glCallCommandListNV(cmdlist.tokenCmdList);/*
+    float *m1 = (float*)malloc(sizeof(float) * 512 * 512);
+    float *m2 = (float*)malloc(sizeof(float) * 512 * 512);
+    float *m3 = (float*)malloc(sizeof(float) * 512 * 512);
+    for (int i = 0; i < 512*512; i++) {
+        m1[i] = i;
+        m2[i] = m1[i] * 2 - 32;
+        m3[i] = 0;
+    }
+    for (int i = 0; i < 512; i++)
+    {
+        for (int j = 0; j < 512; j++) {
+            for (int k = 0; k < 512; k++) {
+                m3[i * 512 + j] += m1[i * 512 + k] + m2[k * 512 + j];
+            }
+        }
+    }*/
   }
 #if ALLOW_EMULATION_LAYER
   void Sample::drawTokenEmulation()
