@@ -1,6 +1,0 @@
-C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/CMakeFiles/gl_commandlist_basic.dir
-C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/CMakeFiles/INSTALL.dir
-C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/shared_sources.dir
-C:/Users/vitor/Documents/MIEI/Visualização e Iluminação 1/Trabalho Prático/gl_commandlist_basic/build/shared_sources/CMakeFiles/INSTALL.dir

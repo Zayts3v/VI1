@@ -385,7 +385,7 @@ namespace basiccmdlist
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
       // load and generate the texture
       int width, height, nrChannels;
-      unsigned char* data = stbi_load("textures\\bark1.tga", &width, &height, &nrChannels, 0);
+      unsigned char* data = stbi_load("..\\textures\\bark1.tga", &width, &height, &nrChannels, 0);
       //unsigned char* data = stbi__tga_load("leafs1.tga", &width, &height, &nrChannels, 0);
       if (data)
       {
@@ -421,7 +421,7 @@ namespace basiccmdlist
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-      data = stbi_load("textures\\leafs1.tga", &width, &height, &nrChannels, 0);
+      data = stbi_load("..\\textures\\leafs1.tga", &width, &height, &nrChannels, 0);
       if (data)
       {
           glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
@@ -443,7 +443,7 @@ namespace basiccmdlist
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
       glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-      data = stbi_load("textures\\relvado.jpg", &width, &height, &nrChannels, 0);
+      data = stbi_load("..\\textures\\relvado.jpg", &width, &height, &nrChannels, 0);
       if (data)
       {
           glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -462,7 +462,7 @@ namespace basiccmdlist
 
     { // Scene Geometry
         
-        nvh::geometry::Figure<Vertex>     folhas("models\\tree.obj", "folhas");
+        nvh::geometry::Figure<Vertex>     folhas("..\\models\\tree.obj", "folhas");
       newBuffer(buffers.folhas_ibo);
       glNamedBufferStorage(buffers.folhas_ibo, folhas.getTriangleIndicesSize(), &folhas.m_indicesTriangles[0], 0);
       newBuffer(buffers.folhas_vbo);
@@ -491,7 +491,7 @@ namespace basiccmdlist
       }
 
       //int boxes = 100;
-
+      /*
       nvh::geometry::Box<Vertex>  box;
       newBuffer(buffers.box_ibo);
       glNamedBufferStorage(buffers.box_ibo, box.getTriangleIndicesSize(), &box.m_indicesTriangles[0], 0);
@@ -503,9 +503,9 @@ namespace basiccmdlist
           glGetNamedBufferParameterui64vNV(buffers.box_vbo, GL_BUFFER_GPU_ADDRESS_NV, &buffersADDR.box_vbo);
           glMakeNamedBufferResidentNV(buffers.box_ibo, GL_READ_ONLY);
           glMakeNamedBufferResidentNV(buffers.box_vbo, GL_READ_ONLY);
-      }
+      }*/
 
-      nvh::geometry::Figure<Vertex>  tronco("models\\tree.obj", "tronco");
+      nvh::geometry::Figure<Vertex>  tronco("..\\models\\tree.obj", "tronco");
       newBuffer(buffers.tronco_ibo);
       glNamedBufferStorage(buffers.tronco_ibo, tronco.getTriangleIndicesSize(), &tronco.m_indicesTriangles[0], 0);
       newBuffer(buffers.tronco_vbo);
@@ -570,7 +570,7 @@ namespace basiccmdlist
       m_sceneObjects.push_back(infoR);
 
 
-      for (int i = 1; i < numObjects / 2 + 1; i+=2){
+      for (int i = 1; i < numObjects + 1; i+=2){
         ObjectData  oTronco,oFolhas;
 
         
@@ -636,7 +636,7 @@ namespace basiccmdlist
 
             m_sceneObjects.push_back(infoF);
       }
-
+      /*
       for (int i = numObjects/2+1; i < numObjects; i++) {
           ObjectData  oBox;
 
@@ -684,7 +684,7 @@ namespace basiccmdlist
           m_sceneObjects.push_back(infoB);
 
       }
-
+      */
 
       glBindBuffer(GL_UNIFORM_BUFFER, 0);
     }
